@@ -1,0 +1,141 @@
+:root{ 
+  --bg:#0b1220; 
+  --card:#111a2b; 
+  --text:#e9eef8; 
+  --muted:#9fb0c6; 
+  --accent:#5cc8ff; 
+  --danger:#ff6b6b; 
+}
+*{ 
+  box-sizing:border-box 
+}
+body{ 
+  margin:0; 
+  font-family: Inter, system-ui, Roboto, Arial; 
+  background:var(--bg); 
+  color:var(--text); 
+}
+.container{ 
+  max-width:1000px; 
+  margin:0 auto; 
+  padding:24px 
+}
+.header h1{ 
+  margin:0 0 8px 
+}
+.card{ 
+  background:var(--card); 
+  border:1px solid #1f2a44; 
+  border-radius:16px; 
+  padding:20px; margin:16px 0; 
+  box-shadow:0 8px 24px rgba(0,0,0,.25) 
+}
+.footer{ 
+  margin-top:24px; 
+  color:var(--muted); 
+  font-size:.9rem 
+}
+
+.steps {
+  display: flex;
+  gap: 8px;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 12px;
+}
+
+.stepBtn {
+  background: #12223f;
+  color: var(--muted);
+  border: 1px solid #293756;
+  border-radius: 15px;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.stepBtn.active {
+  background: var(--accent);
+  color: #000;
+  border-color: var(--accent);
+  font-weight: 600;
+}
+
+.stepBtn:hover {
+  filter: brightness(1.2);
+}
+
+
+.step{ 
+  display:grid; 
+  gap:12px 
+}
+label{ 
+  font-weight:600 
+}
+input, select, button{ 
+  font:inherit 
+}
+input, select{ 
+  padding:10px 12px; 
+  border-radius:10px; 
+  border:1px solid #2a3b63; 
+  background:#0e1729; 
+  color:var(--text) 
+}
+.muted{ 
+  color:var(--muted) 
+}
+.next{ 
+  display:flex; 
+  gap:10px; 
+  justify-content:flex-end 
+}
+button{ 
+  padding:10px 14px; 
+  margin: 5px;
+  border-radius:10px; 
+  border:1px solid #35508a; 
+  background:#17305b; 
+  color:var(--text); 
+  cursor:pointer 
+}
+button.secondary{ 
+  background:#12223f 
+}
+button.danger{ 
+  background:#ad4f15; 
+  border-color:#ff8b48 
+}
+button:hover{ 
+  filter:brightness(1.1) 
+}
+
+.table{ 
+  width:100%; 
+  border-collapse:collapse; 
+  margin-top:10px 
+}
+.table th, .table td{ 
+  padding:10px; 
+  border-top:1px solid #223150 
+}
+.table th{ 
+  text-align:left; 
+  color:var(--muted); 
+  font-weight:600 
+}
+
+.listHeader{ 
+  display:flex; 
+  align-items:center; 
+  justify-content:space-between; 
+  gap:12px 
+}
+.toolbar{ 
+  display:flex; 
+  gap:8px; 
+  align-items:center; 
+  margin-bottom:8px 
+}
+
