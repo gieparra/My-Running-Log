@@ -1,4 +1,5 @@
 My Running Log
+by Angelica Parra
 
 Track your daily runs with distance, time, pace, mood, and weight — all stored locally in your browser.
 Built with React (Vite) and designed for a smooth, keyboard-friendly experience.
